@@ -27,7 +27,7 @@
   <title>Mediarr</title>
 </svelte:head>
 
-<main class="container px-4 md:px-8 py-10">
+<main class="container mx-auto py-10">
   {#if series.length > 0}
     <h2 class="text-3xl font-light mb-8">Your series</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8">

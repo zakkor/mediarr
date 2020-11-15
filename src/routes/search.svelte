@@ -64,11 +64,14 @@
               <p class="text-gray-600 italic">This series doesn't have a description.</p>
             {/if}
             <div class="mt-auto">
-              <div class="flex justify-end">
+              <div class="flex items-center justify-end">
                 {#if r.seasons.some(s => s.monitored)}
-                  <p class="text-sm tracking-wide italic text-gray-500 uppercase">Monitoring</p>
+                  <p class="text-sm tracking-wide italic text-gray-500 uppercase">Monitored</p>
                 {:else}
-                  <p class="text-sm tracking-wide text-gray-600 uppercase">Not monitoring</p>
+                  <p class="text-sm tracking-wide text-gray-600 uppercase leading-none mr-6 mt-1">Not monitored</p>
+                  <button class="focus:outline-none bg-blue-200 hover:bg-blue-300 text-gray-800 text-sm border border-indigo-200 uppercase leading-none tracking-wide rounded-lg transition-colors ease-in-out duration-200 px-10 pt-4 pb-3">
+                    Add
+                  </button>
                 {/if}
               </div>
             </div>
